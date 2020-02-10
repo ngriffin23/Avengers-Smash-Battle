@@ -6,9 +6,9 @@ This is a browser game of rock paper scissors with a twist. I used Avengers char
 Wireframes
 --------
 
-![Wireframes for RPS](./Images/rps_wireframes.png)
+![Wireframes for RPS](./Images/rps_wireframe.png)
 
 User Stories
 --------
 
-![User Stories for RPS](./Images/rps_userstories.pg)
+![User Stories for RPS](./Images/rps_userstories.png)
