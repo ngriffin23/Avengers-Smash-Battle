@@ -1,7 +1,7 @@
 Rock Paper Scissors
 ===================
 
-This is a browser game of rock paper scissors with a twist. I used Avengers characters to represent rock, paper and scissors.
+This is a browser game of rock paper scissors with a twist. 
 
 Wireframes
 --------
