@@ -1,0 +1,16 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+h2 {
+font-family: 'Monofett', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 54px;
+text-align: center;
+
+color: #945EB5;
+}
