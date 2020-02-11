@@ -59,7 +59,8 @@ button {
 }
 
 #container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* style header */
@@ -83,11 +84,15 @@ h2 {
 
 /* style game pieces images */
 img {
-    width: 250px;
+    width: 200px;
     margin: 10px 40px;
 }
 
-#iron:hover {
+img:hover{
+    background-color: cyan;
+}
+
+/* #iron:hover {
     background-color:#FAC21E;
 }
 
@@ -97,4 +102,4 @@ img {
 
 #thanos:hover {
     background-color: rgba(59, 29, 59, 0.37);
-}
+} */
