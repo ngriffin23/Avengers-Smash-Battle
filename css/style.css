@@ -81,7 +81,20 @@ h2 {
     color: black;
 }
 
+/* style game pieces images */
 img {
     width: 250px;
     margin: 10px 40px;
+}
+
+#iron:hover {
+    background-color:#FAC21E;
+}
+
+#hulk:hover {
+    background-color: rgba(115, 182, 48, 0.644);
+}
+
+#thanos:hover {
+    background-color: rgba(59, 29, 59, 0.37);
 }
