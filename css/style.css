@@ -18,7 +18,7 @@ header {
 
 /* style score board */
 table {
-    margin: 40px auto;
+    margin: 30px auto;
     background-color:#FAC21E;
     color: #FAC21E;
     border: 5px solid black;
@@ -50,8 +50,9 @@ td {
 button {
    padding: 10px;
    border: 5px solid black;
-   margin: 20px;
+   margin: 10px;
 }
+
 #container {
     text-align: center;
 }
@@ -69,20 +70,13 @@ h1 {
 
 h2 {
     font-family:'Geo', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 54px;
+    font-size: 32px;
+    line-height: 50px;
     text-align: center;
     color: black;
 }
-/* 
-.restart-btn {
-    display: inline-block;
-    background-color: green;
-    color: black;
-    padding: 0.4rem 1.3rem;
-    font-size: 6 rem;
-    outline: none;
-    border: none;
-} */
+
+img {
+    width: 250px;
+    margin: 20px 40px;
+}
