@@ -18,15 +18,17 @@ header {
 
 /* style score board */
 table {
-    margin: 30px auto;
+    margin: 20px auto;
     background-color:#FAC21E;
     color: #FAC21E;
     border: 5px solid black;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: 30px;
 }
 
 #first {
     background-color: black;
+    font-family:'Geo', sans-serif;
 }
 
 #second {
@@ -50,7 +52,10 @@ td {
 button {
    padding: 10px;
    border: 5px solid black;
+   border-radius: 30px;
    margin: 10px;
+   font-family:'Geo', sans-serif;
+   font-size: 20px;
 }
 
 #container {
@@ -78,5 +83,5 @@ h2 {
 
 img {
     width: 250px;
-    margin: 20px 40px;
+    margin: 10px 40px;
 }
