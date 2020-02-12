@@ -17,4 +17,21 @@ const hulk = document.querySelector('#hulk');
 const thanos = document.querySelector('#thanos');
 
 
+// event listeners to select characters
+ironman.addEventListener('click', function () {
+    console.log('User clicked Iron man')
+})
+cyclops.addEventListener('click', function () {
+    console.log('User clicked Cyclops')
+})
+captainAmerica.addEventListener('click', function () {
+    console.log('User clicked Captain America')
+})
+hulk.addEventListener('click', function () {
+    console.log('User clicked Hulk')
+})
+thanos.addEventListener('click', function () {
+    console.log('User clicked Thanos')
+})
+
 
