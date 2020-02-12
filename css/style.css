@@ -74,13 +74,13 @@ h1 {
     color: black;
 }
 
-h2 {
+h2, h3 {
     font-family:'Geo', sans-serif;
     font-size: 32px;
     line-height: 50px;
     text-align: center;
-    color: black;
 }
+
 
 /* style game pieces images */
 img {
@@ -89,7 +89,9 @@ img {
 }
 
 img:hover{
-    background-color: cyan;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(250, 185, 6);
 }
 
 /* #iron:hover {

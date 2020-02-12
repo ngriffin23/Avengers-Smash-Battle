@@ -19,8 +19,8 @@
             <td>CPU</td>
         </tr>
         <tr id="second">
-            <td>0</td>
-            <td>0</td>
+            <td id="player-score">0</td>
+            <td id="cpu-score">0</td>
         </tr>
     </table>
     
@@ -28,11 +28,15 @@
     <h2>Select Your Weapon!!</h2>
     <div id="weapons">
         <img id="iron" class="game-piece" src="./Images/iron-man.png" alt="rock">
-        <img id="hulk" class="game-piece" src="./Images/hulk.png" alt="hulk">
-        <img id="thanos" class="game-piece" src="./Images/thanos.png" alt="thanos">
         <img id="cyclops" src="./Images/cyclops.png" alt="cyclops">
         <img id="captain-america" src="./Images/captain-america.png" alt="captain america">
+        <img id="hulk" class="game-piece" src="./Images/hulk.png" alt="hulk">
+        <img id="thanos" class="game-piece" src="./Images/thanos.png" alt="thanos">
+
     </div>
+
+    <h2 id="message">Computer is waiting for your move....</h2>
+    <h3 id="winner"></h3>
     
     <div id="container">
         <button class="restart-btn">Restart Game</button>
