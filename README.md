@@ -6,9 +6,9 @@ This is a browser game of rock paper scissors with a twist.
 Wireframes
 --------
 
-![Wireframes for RPS](./Images/wireframes.png)
+![Wireframes for RPS](./assets/wireframes.png)
 
 User Stories
 --------
 
-![User Stories for RPS](./Images/rps_userstories.png)
+![User Stories for RPS](./assets/rps_userstories.png)
