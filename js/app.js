@@ -14,6 +14,9 @@ const thanos = document.querySelector('#thanos');
 const hulk = document.querySelector('#hulk');
 const captainAmerica = document.querySelector('#captain-america');
 
+//reset button
+const resetButton = document.querySelector('.restart-btn');
+
 
 // 1. generate  a random number for each character
 function choiceSelection() {
@@ -42,16 +45,24 @@ function playGame (selection) {
     const match = selection + selection2;
     console.log(match);
     // if there is a tie 
-    if(match === 'thanosthanos' || match === 'hulkhulk' || match === 'captaincaptain'){
-        winnerDisplay.innerHTML = `It's a tie!`
-    } else if (match === 'thanoscaptain' || match === 'hulkthanos' || match === 'captainhulk') {
-        winnerDisplay.innerHTML = `Player won this round!`
-        playerScore++;
-    } else if (match === 'thanoshulk' || match === 'captainthanos' || 'hulkcaptain') {
-        winnerDisplay.innerHTML = `Computer won this round!`
-        cpuScore++;
+    if (cpuScore < 5 && playerScore < 5 ){
+        if(match === 'thanosthanos' || match === 'hulkhulk' || match === 'captaincaptain'){
+            winnerDisplay.innerHTML = `It's a tie!`;
+        } else if (match === 'thanoscaptain' || match === 'hulkthanos' || match === 'captainhulk') {
+            winnerDisplay.innerHTML = `Player won!`
+            playerScore++;
+        } else if (match === 'thanoshulk' || match === 'captainthanos' || 'hulkcaptain') {
+            winnerDisplay.innerHTML = `Computer won!`
+            cpuScore++;
+        }
     }
+
     updateScoreBoard();
+    //when the game has 5 rounds
+    if (playerScore == 5 || cpuScore == 5) {
+        messageDisplay.innerHTML = '';
+        winnerDisplay.innerHTML = `Game over! Final score is ${playerScore}-${cpuScore}`;
+    }
 }
 
 // event listeners to click on characters
@@ -69,6 +80,17 @@ captainAmerica.addEventListener('click', function() {
     console.log('User clicked Captain America');
     playGame('captain');
 
+})
+
+//reset button to reset game
+resetButton.addEventListener('click', function(){
+    console.log('reset game!');
+    playerScore = 0;
+    cpuScore = 0;
+    playerScoreId.innerHTML = playerScore;
+    cpuScoreId.innerHTML = cpuScore;
+    winnerDisplay.innerHTML = '';
+    messageDisplay.textContent = 'Computer is waiting for your move....'
 })
 
 
