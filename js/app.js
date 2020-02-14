@@ -12,7 +12,7 @@ const winnerDisplay = document.querySelector('#winner');
 // game characters
 const thanos = document.querySelector('#thanos');
 const hulk = document.querySelector('#hulk');
-const captainAmerica = document.querySelector('#captain-america');
+const captainAmerica = document.querySelector('#captain');
 
 //reset button
 const resetButton = document.querySelector('.restart-btn');
@@ -49,9 +49,11 @@ function playGame (selection) {
         if(match === 'thanosthanos' || match === 'hulkhulk' || match === 'captaincaptain'){
             winnerDisplay.innerHTML = `It's a tie!`;
         } else if (match === 'thanoscaptain' || match === 'hulkthanos' || match === 'captainhulk') {
+            fistPunch(selection2);
             winnerDisplay.innerHTML = `Player won!`
             playerScore++;
-        } else if (match === 'thanoshulk' || match === 'captainthanos' || 'hulkcaptain') {
+        } else if (match === 'thanoshulk' || match === 'captainthanos' || match === 'hulkcaptain') {
+            fistPunch(selection);
             winnerDisplay.innerHTML = `Computer won!`
             cpuScore++;
         }
@@ -63,6 +65,25 @@ function playGame (selection) {
         messageDisplay.innerHTML = '';
         winnerDisplay.innerHTML = `Game over! Final score is ${playerScore}-${cpuScore}`;
     }
+}
+
+function fistPunch(losingHero) {
+    let distance;
+    if (losingHero === 'thanos') {
+        distance = "0px";
+    } else if (losingHero === 'hulk') {
+        distance = "300px";
+    } else if (losingHero === 'captain') {
+        distance = "600px";
+    }
+
+    document.querySelector(`#${losingHero}`).classList.add('shake');
+    document.querySelector('#fist').style.left = distance;
+
+    setTimeout(function() {
+        document.querySelector(`#${losingHero}`).classList.remove('shake');
+        document.querySelector('#fist').style.left = '-300px';
+    }, 4000)
 }
 
 // event listeners to click on characters

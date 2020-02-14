@@ -43,6 +43,9 @@ td {
 /* style game pieces */
 #weapons {
     padding: 10px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
@@ -87,12 +90,38 @@ h2, h3 {
 img {
     width: 200px;
     margin: 10px 40px;
+    
+}
+
+.game-piece.shake {
+    animation: shake 3s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-20deg); }
+    20% { transform: rotate(20deg); }
+    30% { transform: rotate(-20deg); }
+    40% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    60% { transform: rotate(20deg); }
+    70% { transform: rotate(-20deg); }
+    80% { transform: rotate(20deg); }
+    90% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
 }
 
 img:hover{
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px rgb(250, 185, 6);
+}
+
+#fist {
+    position: absolute;
+    left: -300px;
+    transition: all 3s ease;
+    transform: rotate(90deg);
 }
 
 /* #iron:hover {
