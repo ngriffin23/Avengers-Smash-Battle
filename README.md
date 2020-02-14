@@ -11,6 +11,14 @@ Select a character and battle the computer. Whoever lose gets hit.
 - Hulk beats Thanos
 - Captain beats Hulk
 
+Wireframes
+---------
+![Wireframes](./assets/wireframes.png)
+
+User Stores
+---------
+![User Stories](./assets/rps_userstories.png)
+
 Features
 --------
 - Add sound to the punches
