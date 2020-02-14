@@ -15,3 +15,6 @@ Features
 --------
 - Add sound to the punches
 
+Play the Game 
+-----------
+[Browser Game](https://ngriffin23.github.io/Avengers-Smash-Battle/)
