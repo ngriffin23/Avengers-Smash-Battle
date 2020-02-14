@@ -70,20 +70,22 @@ function playGame (selection) {
 function fistPunch(losingHero) {
     let distance;
     if (losingHero === 'thanos') {
-        distance = "0px";
+        distance = "-1px";
     } else if (losingHero === 'hulk') {
-        distance = "300px";
+        distance = "280px";
     } else if (losingHero === 'captain') {
-        distance = "600px";
+        distance = "580px";
     }
 
     document.querySelector(`#${losingHero}`).classList.add('shake');
     document.querySelector('#fist').style.left = distance;
+    
+    
 
     setTimeout(function() {
         document.querySelector(`#${losingHero}`).classList.remove('shake');
         document.querySelector('#fist').style.left = '-300px';
-    }, 4000)
+    }, 2000)
 }
 
 // event listeners to click on characters
