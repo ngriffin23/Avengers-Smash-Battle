@@ -19,6 +19,12 @@ User Stores
 ---------
 ![User Stories](./assets/rps_userstories.png)
 
+Technologies Used 
+--------
+- HTML
+- CSS 
+- JavaScript
+
 Features
 --------
 - Add sound to the punches
