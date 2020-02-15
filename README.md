@@ -28,6 +28,8 @@ Technologies Used
 Features
 --------
 - Add sound to the punches
+- Work on animation timing
+- Complexity to the levels
 
 Play the Game 
 -----------
