@@ -9,7 +9,7 @@ Select a character and battle the computer. Whoever lose gets hit.
 
 - Thanos beats Captain America
 - Hulk beats Thanos
-- Captain beats Hulk
+- Captain America beats Hulk
 
 Wireframes
 ---------
